@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./second.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+                <span>Level</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#" class="contactus">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+        <div class="booking-form">
+            <form action="#">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="destination"><i class="fa fa-map-marker"></i></label>
+                        <input type="text" id="destination" placeholder="Type your destination...">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkin"><i class="fa fa-calendar"></i></label>
+                        <input type="date" id="checkin" placeholder="Check In">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout"><i class="fa fa-calendar"></i></label>
+                        <input type="date" id="checkout" placeholder="Check Out">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="adults"><i class="fa fa-user"></i></label>
+                        <select id="adults">
+                            <option>Adult</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="children"><i class="fa fa-child"></i></label>
+                        <select id="children">
+                            <option>Children</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="room"><i class="fa fa-bed"></i></label>
+                        <select id="room">
+                            <option>Room</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn1">Check Availability</button>
+                </div>
+                <div class="help">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Need Help?</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div>
+        <section class="form-section">
+            <h2>We are here to help you?</h2>
+            <p>Subscribe to get our newsletters</p>
+            <button type="submit"> SUBSCRIBE NEWLETTERS</button>
+        </section>
+        <div class="tm-section tm-position-relative">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"
+                class="tm-section-down-arrow" height="80px" width="100%">
+                <polygon fill="#ee5057" points="0,0  100,0  50,60"></polygon>
+            </svg>
+        </div>
+        <!--articles-->
+
+        <div class="container services-recommended">
+            <div class="articles-carousel">
+                <div class="articles">
+                    <div class="article">
+                        <i class="fa fa-legal"></i>
+                        <h3>Level HTML Template by Tooplate website</h3>
+                        <p>You are allowed to download, edit and use this template for your client websites.
+                        </p><br>
+                        <a href="#">Continue reading...</a>
+                        <!-- <button>Continue reading...</button> -->
+                    </div>
+                    <div class="article">
+                        <i class="fa fa-plane"></i>
+                        <h3>Original Website Template Producer</h3>
+                        <p>You are NOT allowed to re-distribute the template ZIP file on any website.</p><br>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                    <div class="article">
+                        <i class="far fa-life-ring"></i>
+                        <h3>Contact us if you have any question</h3>
+                        <p>If you see this template being distributed on any other site, that is an illegal copy.</p>
+                        <br>
+                        <a href="#">Continue reading...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="middle_main">
+            <div class="container2">
+                <input type="radio" id="img1" name="scroll" checked>
+                <input type="radio" id="img2" name="scroll">
+                <input type="radio" id="img3" name="scroll">
+                <input type="radio" id="img4" name="scroll">
+                <div class="wrapper">
+                    <div class="image-holder">
+                        <div class="imageBox" id="img1">
+                            <img src="./img-01.jpg" alt="image" height="50%" width="100%">
+                            <div>
+                                <h3>
+                                    NUNC IN fFELIS ALIQUET METUS LUCTUS IACULIS
+                                </h3>
+                                <p>
+                                    Aliquam ac lacus volutpat, dictum risus at,
+                                    scelerisque nulla. Nullam sollicitudin at augue
+                                    venenatis eleifend. Nulla ligula ligula, egestas
+                                    sit amet viverra id, iaculis sit amet ligula.
+                                </p>
+                                <!-- <button type="submit" class="btn1">GET MORE INFO</button> -->
+                                <a href="#" class="btn-2">GET MORE INFO.</a>
+                            </div>
+                        </div>
+                        <div class="imageBox" id="img2">
+                            <img src="./img-02.jpg" alt="image" height="50%" width="100%">
+                            <div>
+                                <h3>
+                                    SED CURSUS DICTUM NUNC QUIS MOLSITE
+                                </h3>
+                                <p>
+                                    Pellentesque quis dui sit amet purus
+                                    scelerisque eleifend sed ut eros. morbi viverra
+                                    blandit massa in varius.sed nec ex eu ex
+                                    tincidunt laculis.Curabitur eget turpis gravida.
+
+                                </p>
+                                <a href="#" class="btn-2">VIEW DETAIL</a>
+                            </div>
+                        </div>
+                        <div class="imageBox" id="img3">
+                            <img src="./img-01.jpg" alt="image" height="50%" width="100%">
+                            <div>
+                                <h3>
+                                    NUNC IN fFELIS ALIQUET METUS LUCTUS IACULIS
+                                </h3>
+                                <p>
+                                    Aliquam ac lacus volutpat, dictum risus at,
+                                    scelerisque nulla. Nullam sollicitudin at augue
+                                    venenatis eleifend. Nulla ligula ligula, egestas
+                                    sit amet viverra id, iaculis sit amet ligula.
+                                </p>
+                                <a href="#" class="btn-2">GET MORE INFO.</a>
+                            </div>
+                        </div>
+                        <div class="imageBox" id="img4">
+                            <img src="./img-02.jpg" alt="image" height="50%" width="100%">
+                            <div>
+                                <h3>
+                                    SED CURSUS DICTUM NUNC QUIS MOLSITE
+                                </h3>
+                                <p>
+                                    Pellentesque quis dui sit amet purus
+                                    scelerisque eleifend sed ut eros. morbi viverra
+                                    blandit massa in varius.sed nec ex eu ex
+                                    tincidunt laculis.Curabitur eget turpis gravida.
+                                </p>
+                                <a href="#" class="btn-2">VIEW DETAIL</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="target">
+                    <label for="img1"> </label>
+                    <label for="img2"> </label>
+                    <label for="img3"> </label>
+                    <label for="img4"> </label>
+                </div>
+
+            </div>
+            <div class="/1">
+                <div class="top">
+                    <h3>Recommended Places</h3>
+                    <p>Enamel pin cliche tilde, kitsch and VHS thundercats</p>
+                </div>
+                <div class="places">
+                    <div class="city1">
+                        <img src="./tn-img-01.jpg" alt="Europe">
+                        <span>Europe</span>
+                    </div>
+                </div>
+                <div class="places">
+                    <div class="city1">
+                        <img src="./tn-img-02.jpg" alt="">
+                        <span>Asia</span>
+                    </div>
+                </div>
+                <div class="places">
+                    <div class="city1">
+                        <img src="./tn-img-03.jpg" alt="">
+                        <span>Africa</span>
+                    </div>
+                </div>
+                <div class="places">
+                    <div class="city1">
+                        <img src="./tn-img-04.jpg" alt="">
+                        <span>South America</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Video Section -->
+        <div class="video-container">
+            <video controls loop muted>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="city">
+        <div class="city-text">
+            <h2>ASIA</h2>
+            <p>Singapore</p>
+        </div>
+
+
+        <!-- Blog Entries Section -->
+        <section class="blog-entries">
+            <div class="entry">
+                <img src="img-03.jpg" alt="Singapore Image 1">
+                <div class="one">
+                    <h3>Suspendisse vel est libero sem phasellus ac laoreet</h3>
+                    <p>Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus finibus rhoncus justo,
+                        tempus eleifend neque dictum ac. Aenean metus leo, consectetur non.</p>
+                    <p>Etiam aliquam arcu at mauris consectetur scelerisque. Integer elementum justo in orci facilisis
+                        ultricies. Pellentesque at velit ante. Duis scelerisque metus vel felis porttitor gravida.</p>
+                </div>
+            </div>
+            <div class="entry">
+                <img src="img-04.jpg" alt="Singapore Image 2">
+                <div class="one">
+                    <h3>Suspendisse vel est libero sem phasellus ac laoreet</h3>
+                    <p>Duis accumsan sagittis tortor in ultrices. Praesent tortor ante, fringilla ac nibh porttitor.</p>
+                    <a href="#">Continue Reading...</a>
+                </div>
+            </div>
+            <div class="entry">
+                <img src="img-05.jpg" alt="Singapore Image 3">
+                <div class="one">
+                    <h3>Faucibus dolor ligula nisl metus auctor aliquet</h3>
+                    <p>In nec felis aliquet nulla luctus lacus vel et nisi. Nulla venenatis nisl nec.</p>
+                    <a href="#">Continue Reading...</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- Map and Send Message Section -->
+    <div class="map-contact-section">
+        <div class="map">
+            <!-- <img src="map-placeholder.png" alt="Map Image"> -->
+
+            <div class="mapswrapper"><iframe width="700" height="450" loading="lazy" allowfullscreen
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=hyderabad&zoom=10&maptype=roadmap"></iframe><a
+                    href="https://www.fluxpromptgenerator.net">Ai Prompt Generator</a>
+
+            </div>
+        </div>
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Message" rows="6" cols="30" required></textarea>
+                <button class="send-btn">SEND MESSAGE NOW</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Hotel. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

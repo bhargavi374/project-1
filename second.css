@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container2{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper{
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+}
+.image-holder{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(4, 50%);
+}
+.imageBox{
+    height: 80%;
+    width: 95%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: auto;
+}
+
+.container2 input{
+    display: none;
+}
+.btn-2{
+    background-color: #ee5057;
+    color: white;
+    text-decoration: none;
+    padding: 10px 80px;
+    margin-left: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.target{
+    height: 10%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.target label{
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: black;
+}
+#img1:checked~.wrapper .image-holder {
+    transform: translateX(0);
+    transition: all 1s ease;
+}
+
+#img2:checked~.wrapper .image-holder {
+    transform: translateX(-50%);
+    transition: all 1s ease;
+}
+
+#img3:checked~.wrapper .image-holder {
+    transform: translateX(-100%);
+    transition: all 1s ease;
+}
+
+#img4:checked~.wrapper .image-holder {
+    transform: translateX(-150%);
+    transition: all 1s ease;
+}
+
+.middle_main{
+    display: flex;
+    background-color: #ddd;
+    justify-content: space-around;
+}
+.recommendations{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.places{
+    padding: 0.5rem;
+    background-color: white;
+}
+.top{
+    background-color: #ee5057;
+    color: white;
+    padding: 5px 20px;
+    margin-top: 60px;
+}
+.city1{
+    background-color: #ddd;
+    cursor: pointer;
+}
+.city1:hover{
+    background-color: #ccc;
+    color: #ee5057;
+}
