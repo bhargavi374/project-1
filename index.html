@@ -20,6 +20,12 @@
                 <img src="logo.png" alt="logo">
                 <span>Level</span>
             </div>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <ul class="nav-links">
                 <li><a href="#home" class="active">HOME</a></li>
                 <li><a href="#Portfolio">PORTFOLIO</a></li>
@@ -36,22 +42,21 @@
         <div class="booking-form">
             <form action="#">
                 <div class="form-row">
-                    <div class="form-group">
-                        <label for="destination"><i class="fa fa-map-marker"></i></label>
+                    <div class="form-group1">
+                        <label for="destination" id="dest"><i class="fa fa-map-marker"></i></label>
                         <input type="text" id="destination" placeholder="Type your destination...">
                     </div>
-                    <div class="form-group">
-                        <label for="checkin"><i class="fa fa-calendar"></i></label>
+                    <div class="form-group1">
+                        <label for="checkin" id="dest"><i class="fa fa-calendar"></i></label>
                         <input type="date" id="checkin" placeholder="Check In">
                     </div>
-                    <div class="form-group">
-                        <label for="checkout"><i class="fa fa-calendar"></i></label>
+                    <div class="form-group1">
+                        <label for="checkout" id="dest"><i class="fa fa-calendar"></i></label>
                         <input type="date" id="checkout" placeholder="Check Out">
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="adults"><i class="fa fa-user"></i></label>
+
+                    <div class="form-group1">
+                        <label for="adults" id="dest"><i class="fa fa-user"></i></label>
                         <select id="adults">
                             <option>Adult</option>
                             <option>1</option>
@@ -66,8 +71,8 @@
                             <option>10</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="children"><i class="fa fa-child"></i></label>
+                    <div class="form-group1">
+                        <label for="children" id="dest"><i class="fa fa-child"></i></label>
                         <select id="children">
                             <option>Children</option>
                             <option>1</option>
@@ -82,8 +87,8 @@
                             <option>10</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label for="room"><i class="fa fa-bed"></i></label>
+                    <div class="form-group1">
+                        <label for="room" id="dest"><i class="fa fa-bed"></i></label>
                         <select id="room">
                             <option>Room</option>
                             <option>1</option>
@@ -131,7 +136,6 @@
                         <p>You are allowed to download, edit and use this template for your client websites.
                         </p><br>
                         <a href="#">Continue reading...</a>
-                        <!-- <button>Continue reading...</button> -->
                     </div>
                     <div class="article">
                         <i class="fa fa-plane"></i>
@@ -171,7 +175,6 @@
                                     sit amet viverra id, iaculis sit amet ligula.
                                 </p>
                                 <button type="submit" class="btn-2">GET MORE INFO</button>
-                                <!-- <a href="#" class="btn-2">GET MORE INFO.</a> -->
                             </div>
                         </div>
                         <div class="imageBox" id="img2">
@@ -188,7 +191,6 @@
 
                                 </p>
                                 <button type="submit" class="btn-2">VIEW DETAIL</button>
-                                <!-- <a href="#" class="btn-2">VIEW DETAIL</a> -->
                             </div>
                         </div>
                         <div class="imageBox" id="img3">
@@ -204,7 +206,6 @@
                                     sit amet viverra id, iaculis sit amet ligula.
                                 </p>
                                 <button type="submit" class="btn-2">GET MORE INFO</button>
-                                <!-- <a href="#" class="btn-2">GET MORE INFO.</a> -->
                             </div>
                         </div>
                         <div class="imageBox" id="img4">
@@ -220,7 +221,6 @@
                                     tincidunt laculis.Curabitur eget turpis gravida.
                                 </p>
                                 <button type="submit" class="btn-2">VIEW DETAIL</button>
-                                <!-- <a href="#" class="btn-2">VIEW DETAIL</a> -->
                             </div>
                         </div>
                     </div>
@@ -270,7 +270,7 @@
 
         <!-- Video Section -->
         <div class="video-container">
-            <video controls loop muted>
+            <video autoplay loop muted>
                 <source src="video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -320,11 +320,10 @@
     <!-- Map and Send Message Section -->
     <div class="map-contact-section" id="contactus">
         <div class="map">
-            <!-- <img src="map-placeholder.png" alt="Map Image"> -->
+            <div class="mapswrapper"><iframe loading="lazy" allowfullscreen height="450px" ; width="700px"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=hyderabad&zoom=10&maptype=roadmap"></iframe>
 
-            <div class="mapswrapper"><iframe width="700" height="450" loading="lazy" allowfullscreen
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=hyderabad&zoom=10&maptype=roadmap"></iframe><a
-                    href="https://www.fluxpromptgenerator.net">Ai Prompt Generator</a>
+                <a href="https://www.fluxpromptgenerator.net">Ai Prompt Generator</a>
 
             </div>
         </div>

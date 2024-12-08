@@ -23,7 +23,7 @@
 }
 .imageBox{
     height: 80%;
-    width: 95%;
+    width: 100%;
     background-color: white;
     display: flex;
     align-items: center;
@@ -44,6 +44,7 @@
     border: none;
     cursor: pointer;
     border-radius: 2px;
+    margin-bottom: 20px;
 }
 .target{
     height: 10%;
@@ -81,6 +82,7 @@
 
 .middle_main{
     display: flex;
+    flex-wrap: wrap;
     background-color: #ddd;
     justify-content: space-around;
 }
@@ -108,3 +110,4 @@
     background-color: #ccc;
     color: #ee5057;
 }
+
