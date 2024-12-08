@@ -73,19 +73,12 @@ body {
     border-radius: 3px;
     border-left: 1px solid #676b6f87;
 }
-
 .nav-links li a.active,
 .nav-links li a:hover {
     background-color: #ee5057;
     color: white;
 }
-
-.active {
-    background-color: #ee5057;
-    color: white;
-}
-
-.contactus {
+ .contactus {
     border-right: 1px solid #676b6f87;
 }
 
@@ -486,6 +479,8 @@ body {
     flex-wrap: wrap;
     padding: 50px 20px;
     background-image: url(bg-img-3.jpg);
+    background-position-x: center;
+    overflow: hidden;
 }
 
 .map {
