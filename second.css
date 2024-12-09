@@ -111,3 +111,30 @@
     color: #ee5057;
 }
 
+@media only screen and (max-width:450px) {
+   .container2{
+    width: 100%;
+   }
+   .image-holder{
+    grid-template-columns: repeat(4,100%);
+   }
+   #img1:checked~.wrapper .image-holder {
+    transform: translateX(0);
+    transition: all 1s ease;
+}
+
+#img2:checked~.wrapper .image-holder {
+    transform: translateX(-100%);
+    transition: all 1s ease;
+}
+
+#img3:checked~.wrapper .image-holder {
+    transform: translateX(-200%);
+    transition: all 1s ease;
+}
+
+#img4:checked~.wrapper .image-holder {
+    transform: translateX(-300%);
+    transition: all 1s ease;
+}
+}
