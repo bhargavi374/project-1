@@ -402,11 +402,13 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 50px;
+    /* padding: 50px; */
     background: url(bg-img-2.jpg) no-repeat center center;
     background-size: cover;
     color: #fff;
-    margin-left: 100px;
+    /* margin-left: 100px; */
+    justify-content: space-around;
+
 }
 
 .city-text {
@@ -431,7 +433,7 @@ body {
     max-width: 800px;
     display: flex;
     flex-direction:column;
-    gap: 15px;
+    gap: 1rem;
     margin-right: 80px;
 }
 
@@ -477,26 +479,33 @@ body {
 .map-contact-section {
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 20px;
+    /* padding: 50px 20px; */
     background-image: url(bg-img-3.jpg);
     background-position-x: center;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 5rem;
+    padding-block: 5rem;
+    gap: 10rem;
 }
 
-.map {
-    flex: 1;
-    margin-right: 70px; 
-    min-width: 300px;
-}
+/* .map {
+    flex: 1; 
+     margin-right: 70px; 
+     min-width: 300px;
+} */
 .mapswrapper{
     max-width: 700px;
     max-height: 450px;
+    width: 30%;
 }
 
 .contact-form {
-    flex: 1;
-    min-width: 300px;
+    /* flex: 1; */
+    /* min-width: 300px; */
     background-color: #fff; 
+    width: 30%;
 }
 
 .contact-form form {
@@ -564,7 +573,7 @@ footer {
 @media (max-width: 768px) {
    .city{
     margin: 0px 50px;
-    padding: 0;
+    padding: 0; 
    }
     .entry{
         flex-wrap: wrap;
@@ -575,4 +584,5 @@ footer {
         width: calc(100% - 20px);
         
     }
+
 }
