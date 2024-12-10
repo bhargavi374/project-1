@@ -586,6 +586,7 @@ footer {
 
     .map-contact-section {
         width: 100%;
+        height: 100%;
         display: flex;
         flex-wrap: wrap;
         background-image: url(bg-img-3.jpg);
