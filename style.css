@@ -20,6 +20,13 @@ body {
     background-color: #F4F4F4;
 }
 
+p,
+h2,
+h3,
+span {
+    cursor: text;
+}
+
 .navbar {
     width: 100%;
     background-color: #fff;
@@ -225,10 +232,11 @@ select {
     border: none;
     cursor: pointer;
     width: 100%;
+    text-decoration: none;
 }
 
 .btn1:hover {
-    background-color: darkred;
+    background-color: #b61119;
 }
 
 .help {
@@ -279,7 +287,8 @@ select {
 }
 
 .form-section button:hover {
-    background-color: darkred;
+    background-color: #fff;
+    color: #ee5057;
 }
 
 .articles-carousel {
@@ -298,7 +307,6 @@ select {
 .article {
     padding: 50px;
     border-radius: 5px;
-
     width: calc(30% - 20px);
     margin: 10px;
     text-align: center;
@@ -470,10 +478,16 @@ select {
     flex-wrap: wrap;
     background-image: url(bg-img-3.jpg);
     background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: 5rem;
     gap: 2rem;
+}
+
+.map {
+    margin-top: 1rem;
 }
 
 .contact-form {
@@ -554,7 +568,6 @@ footer {
 
 @media (max-width: 768px) {
     .city {
-        /* margin: 0px 50px; */
         padding: 0;
         justify-content: center;
     }
@@ -585,15 +598,17 @@ footer {
     }
 
     .map-contact-section {
-        width: 100%;
         display: flex;
         flex-wrap: wrap;
         background-image: url(bg-img-3.jpg);
         background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         justify-content: center;
         align-items: center;
         padding-inline: 1rem;
         padding-block: 5rem;
+        overflow: hidden;
     }
 
     .contact-form {
